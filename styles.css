@@ -1,44 +1,70 @@
-/* Body and general layout settings */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5; /* Set background color of the page */
-}
-
-/* Testimonial section container */
+/* General section styles */
 .testimonial-section {
-    padding: 50px;
-    background-color: #f5f5f5; /* Set background color for the section */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* Testimonial box styling */
-.testimonial {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
     border-radius: 8px;
 }
 
-/* Testimonial text styling */
-.testimonial-text {
-    font-size: 16px;
+/* Heading style */
+.testimonial-section h1 {
+    font-size: 2.5em;
     color: #333;
-    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Individual testimonial styling */
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial text style */
+.testimonial-text {
+	display : flex;
+    font-size: 1.2em;
+    color: #555;
+    font-style: italic;
     margin-bottom: 15px;
 }
 
-/* Author text styling */
+/* Author name styling */
 .author {
-    font-size: 14px;
-    color: #777;
-    text-align: right;  /* Align author name to the right */
-    font-style: italic; /* Make author name italic */
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+	display : flex;
+	justify-content : end;
+}
+
+/* Hover effect for testimonials */
+.testimonial:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding: 30px 15px;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+
+    .testimonial-text {
+        font-size: 1.1em;
+    }
+
+    .author {
+        font-size: 1em;
+    }
 }
